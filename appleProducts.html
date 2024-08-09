@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Products Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .intro {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .intro h2 {
+            font-size: 2em;
+            color: #333;
+        }
+        .intro p {
+            font-size: 1.2em;
+            color: #666;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        .product h3 {
+            color: #333;
+            font-size: 1.5em;
+        }
+        .product p {
+            color: #666;
+        }
+        .product .price {
+            font-size: 1.2em;
+            color: #333;
+            margin: 10px 0;
+        }
+        .product button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        .product button:hover {
+            background-color: #555;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TechShop E&G</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Cart</a>
+            <a href="services.html">Services</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="intro">
+            <h2>Apple Products</h2>
+            <p>Check out our range of apple products.</p>
+        </div>
+        <div class="products">
+            <div class="product">
+                <img src="images/iphone X.jfif" alt="Apple">
+                <h3>IPhone X</h3>
+                <p>Click the specs button to view product specs</p>
+                <p class="price">R6999</p>
+                <button>Specs</button>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/iphone 11.jfif" alt="Apple">
+                <h3>IPhone 11</h3>
+                <p>Click the specs button to view product specs</p>
+                <p class="price">R7999</p>
+                <button>Specs</button>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/iphone 12.jfif" alt="Apple">
+                <h3>IPhone 12</h3>
+                <p>Click the specs button to view product specs</p>
+                <p class="price">R10999</p>
+                <button>Specs</button>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/iphone 13.jfif" alt="Apple">
+                <h3>IPhone 13</h3>
+                <p>Click the specs button to view product specs</p>
+                <p class="price">R13999</p>
+                <button>Specs</button>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/iphone 14.jfif" alt="Apple">
+                <h3>IPhone 14</h3>
+                <p>Click the specs button to view product specs</p>
+                <p class="price">R16999</p>
+                <button>Specs</button>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/iphone 15.jfif" alt="Apple">
+                <h3>IPhone 15</h3>
+                <p>Click the specs button to view product specs</p>
+                <p class="price">R20999</p>
+                <button>Specs</button>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/apple watch.jfif" alt="Apple">
+                <h3>Apple Watch</h3>
+                <p>Click the specs button to view product specs</p>
+                <p class="price">R5099</p>
+                <button>Specs</button>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/ipad air.webp" alt="Apple">
+                <h3>IPad Air</h3>
+                <p>Click the specs button to view product specs</p>
+                <p class="price">R16999</p>
+                <button>Specs</button>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/apple tv.jfif" alt="Apple">
+                <h3>Apple TV</h3>
+                <p>Click the specs button to view product specs</p>
+                <p class="price">R7999</p>
+                <button>Specs</button>
+                <button>Add to Cart</button>
+            </div>
+            
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; Coded with P by Vicious.</p>
+    </div>
+</body>
+</html>

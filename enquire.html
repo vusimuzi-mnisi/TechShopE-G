@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquire Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .intro {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .intro h2 {
+            font-size: 2em;
+            color: #333;
+        }
+        .intro p {
+            font-size: 1.2em;
+            color: #666;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+        form input, form textarea, form select {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+            color: #333;
+        }
+        form button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin-left: 220px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        form button:hover {
+            background-color: #555;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TechShop E&G</h1>
+        <nav>
+            <a href="index.html">Home</a> 
+            <a href="#">Cart</a>
+            <a href="services.html">Services</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="intro">
+            <h2>Enquire About Services</h2>
+            <p>Please fill out the form below to get in touch with us.</p>
+        </div>
+        <form action="EnquiryServlet" method="post">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="service">Service</label>
+            <select id="service" name="service" required>
+                <option hidden="">Choose A Service</option>
+                <option value="repair">Gadget Repairs</option>
+                <option value="pc-building">PC Building</option>
+            </select>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+            
+            <button type="submit">Submit Enquiry</button>
+        </form>
+    </div>
+    <div class="footer">
+        <p>&copy; Coded with P by Vicious.</p>
+    </div>
+</body>
+</html>
